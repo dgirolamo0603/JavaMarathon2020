@@ -20,24 +20,23 @@ public class Task1 {
 
         for (int i = 0; i < arrayNumbers.length; i++) {
             arrayNumbers[i] = numberRandom.nextInt(11);
-             if (arrayNumbers[i] > 8) {
+            if (arrayNumbers[i] > 8) {
                 count++;
-            } else if (arrayNumbers[i] == 1) {
+            }
+            if (arrayNumbers[i] == 1) {
                 countFirst++;
-            } else if (arrayNumbers[i] % 2 == 0) {
+            }
+            if (arrayNumbers[i] % 2 == 0) {
                 countEven++;
+            }
+            if (arrayNumbers[i] % 2 != 0) {
+                countOdd++;
             }
             sum = sum + arrayNumbers[i];
 
 
         }
-        for (int x : arrayNumbers
-        ) {
-            if (x % 2 != 0) {
-                countOdd++;
-            }
 
-        }
         System.out.println(Arrays.toString(arrayNumbers));
         System.out.println("Длина массива: " + arrayNumbers.length);
         System.out.println("Количество чисел больше 8: " + count);

@@ -7,7 +7,7 @@ public class Task4 {
     public static void main(String[] args) {
         int[] arrayNumber = new int[100];
         Random random = new Random();
-        int max = 0;
+        int max = Integer.MIN_VALUE;
         int imax = 0;
 
         for (int i = 0; i < arrayNumber.length; i++) {

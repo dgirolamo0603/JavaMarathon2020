@@ -1,15 +1,29 @@
 package day4;
 
 import java.util.Random;
+//
+//Создать новый массив размера 100 и заполнить его случайными числами из диапазона от 0 до 10000.
+//        Затем, используя циклы for each вывести в консоль:
+//        наибольший элемент массива
+//        наименьший элемент массива
+//        количество элементов массива, оканчивающихся на 0
+//        сумму элементов массива, оканчивающихся на 0
+//
+//        Использовать сортировку запрещено.
+
 
 public class Task2 {
     public static void main(String[] args) {
         int[] numbers = new int[100];
         Random random = new Random();
-        int max = 0;
-        int min = 9999;
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        //int max =numbers[0];
+        //int min = numbers[0];
         int counter = 0;
         int sum = 0;
+
+
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = random.nextInt(10000 + 1);
         }
