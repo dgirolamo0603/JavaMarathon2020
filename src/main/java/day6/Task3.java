@@ -30,18 +30,23 @@ class Teacher {
     public void evaluate(Student student) {
         String mark = "";
         Random random = new Random();
-
-        int random_mark = random.nextInt(4) + 2;
-        if (random_mark == 2) {
-            mark = "неудовлетворительно";
-        } else if (random_mark == 3) {
-            mark = "удовлетворительно";
-        } else if (random_mark == 4) {
-            mark = "хорошо";
-        } else if (random_mark == 5) {
-            mark = "отлично";
+        int randomMark = random.nextInt(3) + 2;
+        switch (randomMark) {
+            case 2:
+                mark = "неудовлетворительно";
+                break;
+            case 3:
+                mark = "удовлетворительно";
+                break;
+            case 4:
+                mark = "хорошо";
+                break;
+            case 5:
+                mark = "отлично";
         }
-        System.out.println("Преподаватель " + name + " оценил студента с именем " + student.getName() + " по предмету " + subject + " на оценку " + mark);
+
+        System.out.println("Преподаватель " + name + " оценил студента с именем " + student.getName()
+                + " по предмету " + subject + " на оценку " + mark);
 
 
     }

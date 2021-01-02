@@ -8,13 +8,12 @@ public class Task3 {
         for (int i = 0; i < 5; i++) {
             double x = scanner.nextDouble();
             double y = scanner.nextDouble();
-            System.out.printf("%.0f %.0f - ваш ввод в консоль \n", x, y);
+            //System.out.printf("%.0f %.0f - ваш ввод в консоль \n", x, y);
             if (y == 0) {
                 System.out.println("Деление на 0");
                 continue;
             }
-            double res = x / y;
-            System.out.println(res + " - ответ программы");
+            System.out.println(x / y);
 
 
         }

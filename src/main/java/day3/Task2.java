@@ -8,10 +8,9 @@ public class Task2 {
         while (true) {
             double x = scanner.nextDouble();
             double y = scanner.nextDouble();
-            System.out.printf("%.0f %.0f - ваш ввод в консоль \n", x, y);
             if (y == 0) break;
-            double res = x / y;
-            System.out.println(res + " - ответ программы");
+
+            System.out.println(x / y);
 
 
         }

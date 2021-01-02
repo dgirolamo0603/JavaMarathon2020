@@ -9,7 +9,7 @@ public class Task3 {
         int b = scanner.nextInt();
 
         if (a < b) {
-            int i = a;
+            int i = a+1;
             while (i > a && i < b) {
                 if (i % 5 == 0 && i % 10 != 0) {
                     System.out.print(i + " ");

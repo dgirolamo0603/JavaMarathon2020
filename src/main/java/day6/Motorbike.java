@@ -29,18 +29,12 @@ class Motorbike {
         System.out.println("Это мотоцикл");
     }
 
-    public void yearDifference(int inputYear) {
+    public int yearDifference(int inputYear) {
+        return Math.abs(inputYear - year);
 
-        if (inputYear < this.year) {
-            System.out.println("Ошибка");
-
-        } else {
-
-            System.out.println(inputYear - year);
-
-
-        }
 
     }
 
 }
+
+
