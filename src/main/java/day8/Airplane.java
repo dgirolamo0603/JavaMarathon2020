@@ -64,4 +64,8 @@ class Airplane {
         fuel += n;
     }
 
+    @Override
+    public String toString() {
+        return "Изготовитель: " + producer + ", год выпуска: " + year + ", длина: " + length + ", вес: " + weight + ", количество топлива в баке: " + fuel;
+    }
 }

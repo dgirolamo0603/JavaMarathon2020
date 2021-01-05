@@ -8,6 +8,6 @@ public class Task1 {
         Motorbike motorbike1 = new Motorbike("Иж","зеленый",1995);
         motorbike1.info();
         motorbike1.yearDifference(1999);
-        car1.yearDifference(1999);
+        System.out.println(car1.yearDifference(1999));
     }
 }
